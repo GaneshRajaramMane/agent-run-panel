@@ -2,6 +2,10 @@
 
 This project is a React-based UI component that visualizes an AI agent run in real time. It shows tasks being executed, tool calls, intermediate outputs, retries, cancellations, and the final result.
 
+## AI Assistance
+
+This project was built with assistance from AI tools (ChatGPT) for guidance and debugging, while all implementation decisions and code structure were done by me.
+
 ##  How to Run Locally
 
 1. Clone the repository:
