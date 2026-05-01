@@ -1,16 +1,37 @@
-# React + Vite
+# Agent Run Panel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React-based UI component that visualizes an AI agent run in real time. It shows tasks being executed, tool calls, intermediate outputs, retries, cancellations, and the final result.
 
-Currently, two official plugins are available:
+##  How to Run Locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. Clone the repository:
+   git clone https://github.com/GaneshRajaramMane/agent-run-panel.git
 
-## React Compiler
+2. Go to project folder:
+   cd agent-run-panel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. Install dependencies:
+   npm install
 
-## Expanding the ESLint configuration
+4. Start development server:
+   npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Switching Fixtures
+
+Currently using a mock event stream in:
+src/mock/events.js
+
+You can modify this file to simulate:
+- success run
+- error run
+- different task sequences
+
+---
+
+## Known Gaps
+
+- No backend (mock-only implementation)
+- Limited animation for transitions
+- Dependency relationships are not visually represented as a graph
